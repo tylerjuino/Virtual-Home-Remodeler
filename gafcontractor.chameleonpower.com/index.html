@@ -1,0 +1,717 @@
+
+    <!doctype html>
+    <html lang="en">
+
+    
+<!-- Mirrored from gafcontractor.chameleonpower.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Oct 2018 23:44:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>GAF Virtual Home Remodeler</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+        var SITEID = 'GAF';
+        // Check document domain for iframe
+        (function() {
+          var arr = (location.hostname || '').split('.');
+          if (arr.length > 1) document.domain = arr.slice(-2).join('.');
+        }());
+      </script>
+      <link href="../cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" rel="stylesheet" />
+      <link href="css/release5c94.css?v=k8owk-frAJluyQr74P-8RwAAv9kFaARrDhtYJZrqNg41" rel="stylesheet"/>
+
+        <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+
+    <body>
+      <section id="MAIN">
+        
+    <section id="zip-overlay">
+      <div>
+        Please Enter your Zip / Postal Code
+        <form>
+          <input id="zip-code" type="text" name="zipcode" value="" maxlength="7" required="required" autocomplete="postal-code" placeholder="07054" autofocus="autofocus"  />
+          <input id="zip-submit" type="submit" value="GO" />
+        </form>
+      </div>
+    </section>
+    <header>
+      <div class="logo">
+     
+      </div>
+
+      <div class="logo2">
+             <span>Virtual</span> Home Remodeler
+      </div>
+
+
+      <div class="visualizer-wrapper">
+        <nav class="visualizer">
+          <div id="home">Home</div>
+          <div id="projects">Projects</div>
+          <div id="upload">Upload</div>
+          <div id="save">Save</div>
+          <div id="print">Print</div>
+          <div id="share-menu">Share</div>
+          <div id="questions">Questions/Feedback</div>
+          <div id="help">Help</div>
+        </nav>
+        <nav id="share">
+          <a href="#" id="facebookLink"><img src="img/FB.svg" /><img src="img/FB_Active.svg" />Facebook</a>
+          <a href="#" id="twitterLink"><img src="img/Twitter.svg" /><img src="img/Twitter_Active.svg" />Twitter</a>
+          <a href="#" id="pinterestLink"><img src="img/Pinterest.svg" /><img src="img/Pinterest_Active.svg" />Pinterest</a>
+          <span id="email-btn"><img src="img/Email.svg" /><img src="img/Email_Active.svg" />Mail</span>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="landing">
+        <h2>Mix and match shingle styles & colors, trim, and exterior materials on a home like yours!</h2>
+        <nav>
+          <div id="select-scene">
+            Start Designing.
+            <span>Choose One of Our Pre-Selected Homes</span>
+          </div>
+          <div id="upload-banner">
+            Upload Your Own.
+            <span>Load a Picture of Your Own Home</span>
+          </div>
+          <div id="landing-projects">
+            Sign In.
+            <span>Access Your Saved Projects</span>
+          </div>
+        </nav>
+      </section>
+      <section class="scenes">
+        <h2>
+          Select one of the homes below to begin viewing different roof and exterior color combinations.<br />
+          Or you can <a href="#" id="upload-link">Upload Your Own</a> photo.
+        </h2>
+        <div class="scene-wrapper lazy">
+          <ul id="roomscene-data"></ul>
+        </div>
+      </section>
+      <div class="visualizer-wrapper">
+        <section class="visualizer">
+          <div class="visualizer-pane">
+            <div id="visualizer"></div>
+          </div>
+          <div class="product-menu">
+            <ul id="product-accordion"></ul>
+          </div>
+        </section>
+      </div>
+
+
+
+      <footer>
+        <section class="bottom">
+          <div class="collections">
+            <h3 class="noIM">Designer Collections <span class="black">|</span> <span class="blue">Hand-Picked Homes By Nancy Fire</span></h3>
+            <ul class="collection-list noIM">
+              <li>
+                <span data-collection="Blues and Greens"><i class="fa fa-info-circle"></i></span>
+                <img />
+                <p>Blues and Greens</p>
+              </li>
+              <li>
+                <span data-collection="Beige and Gold"><i class="fa fa-info-circle"></i></span>
+                <img />
+                <p>Beige and Gold</p>
+              </li>
+              <li>
+                <span data-collection="Browns and Reds"><i class="fa fa-info-circle"></i></span>
+                <img />
+                <p>Browns and Reds</p>
+              </li>
+              <li>
+                <span data-collection="Grays and Blacks"><i class="fa fa-info-circle"></i></span>
+                <img />
+                <p>Grays and Blacks</p>
+              </li>
+            </ul>
+          </div>
+          <div class="matches">
+            <h3>Complementary Matches</h3>
+            <div id="matches" class="match-list-wrapper"></div>
+          </div>
+        </section>
+        <section class="links">
+            <span>To schedule your <strong>FREE</strong> in-home consultation with a Lowe's roofing professional, visit <a href="https://www.lowes.com/l/roofing-installation.html" target="_blank">lowes.com/GetInstalled</a></span>
+          <ul>
+            <li id="locate-contractor">Locate A Certified Contractor</li>
+            <li id="embed-tool">Embed This Tool</li>
+            <li id="feedback">Questions/Feedback</li>
+            <li id="style-guide">Style Guide</li>
+          </ul>
+        </section>
+      </footer>
+
+    </main>
+    <div id="embed-modal" class="lightbox ghost-center">
+      <div>
+        <div class="header">
+          <h2>Install This Tool On Your Own Website</h2>
+          <button type="button" class="close">X</button>
+        </div>
+        <div class="content">
+          <p>Copy and paste the following code into your website.</p>
+          <pre><code class="hljs html">&lt;iframe src=&quot;http://gafcontractor.chameleonpower.com/&quot; width=&quot;100%&quot; height=&quot;100%&quot;
+scrolling=&quot;no&quot;style=&quot;overflow:hidden&quot; frameBorder=&quot;0&quot; seamless=&quot;seamless&quot;&gt;&lt;/iframe&gt;</code></pre>
+          <button id="copy" data-clipboard-text='<iframe src="index.html" width="100%" height="100%" scrolling="no" style="overflow:hidden" frameBorder="0" seamless="seamless"></iframe>'>Copy</button>
+        </div>
+      </div>
+    </div>
+    <div id="contractor-modal" class="lightbox ghost-center">
+      <div>
+        <div class="header">
+          <h2>Locate A Certified Contractor</h2> <button type="button" class="close">X</button>
+        </div>
+        <div class="content">
+          <h3>Send For Estimate</h3>
+          <p>Select up to three GAF Factory Certified Master Elite roofing contractors to request an estimate.</p>
+          <p>You can also search for a contractor and manage the process yourself if you prefer.</p>
+          <p><a href="https://www.gaf.com/Roofing/Contractors" target="_blank">GAF Contractor Locator</a></p>
+        </div>
+      </div>
+    </div>
+    <div id="feedback-modal" class="lightbox ghost-center">
+      <div>
+        <div class="header">
+          <h2>Feedback</h2> <button type="button" class="close">X</button> </div>
+        <div class="content">
+          <p>Please send us any questions or comments you may have.</p>
+          <form> <label>Email address:</label> <input type="text" name="email" /> <label>Message</label> <textarea name="message"></textarea>
+            <div class="buttons"> <button type="submit">Send</button> <button type="button" class="cancel">Cancel</button> </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="email-modal" class="lightbox ghost-center">
+      <div>
+        <div class="header">
+          <h2>Email</h2> <button type="button" class="close">X</button> </div>
+        <div class="content">
+          <p>To email your project to a friend, please fill in the fields below.</p>
+          <form> <label>Your Name</label> <input type="text" name="fromName" /> <label>*Your Email Address</label> <input type="text" name="fromEmail" /> <label>Friend's Name</label> <input type="text" name="toName" /> <label>*Friend's Email Address</label>            <input type="text" name="toEmail" /> <label>*Message</label> <textarea name="body"></textarea>
+            <div class="required-notice">*required field</div> <button>Send</button> </form>
+        </div>
+      </div>
+    </div>
+    <div id="tour">
+      <div id="collection-tour" class="tour-step arrow-down">
+        <div class="main">
+          <p>Having Trouble getting started? Use our Design Expert's Curated Collections.</p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>1 of 9</div>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="product-tour" class="tour-step arrow-right">
+        <div class="main">
+          <p>Use this menu to pick between Roof Shingles, Exterior Wall and Trim Color options for your design.</p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>2 of 9</div>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="color-families" class="tour-step arrow-right">
+        <div class="main">
+          <p>Click here to narrow down the color options to find the perfect color for your home. </p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>3 of 9</div>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="complementary-tour" class="tour-step arrow-down">
+        <div class="main">
+          <p>Based on your product selection, complementary matches will be provided below.</p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>4 of 9</div>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="time-tour" class="tour-step arrow-up">
+        <div class="main">
+          <p>Change these settings to see how your product looks at different times of the day or year.</p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>5 of 9</div>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="controls-tour" class="tour-step arrow-up">
+        <div class="main">
+          <p>You can zoom in on the home, as well as undo or redo any applied product.</p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>6 of 9</div>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="projects-tour" class="tour-step arrow-up">
+        <div class="main">
+          <p>This top navigation allows you to access your account/projects, as well as share your design.</p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>7 of 9</div>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="feedback-tour" class="tour-step arrow-down">
+        <div class="main">
+          <p>For more help with this tool or to provide feedback, click below.</p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>8 of 9</div>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="finish-tour" class="tour-step arrow-up">
+        <div class="main">
+          <p>Now that you are familiar with GAF Virtual Home Remodeler you can begin designing!</p>
+          <div class="footer">
+            <button type="button" class="close">Close</button>
+            <div>9 of 9</div>
+            <button type="button" class="close">Finish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+        
+        
+    <!-- IM 3 UPLOAD OVERLAY -->
+    <!-- IM Start Modal -->
+    <div id="uploadOverlay">
+      <!-- modal -->
+      <div class="modal">
+        <div class="modal-headline"> Upload My Own Photo
+          <div class="modal-close"><i class="fa fa-close"></i></div>
+        </div>
+        <div class="modal-box">
+          <div class="upload-box">
+            <form name="aspnetForm" method="post" action="http://gafcontractor.chameleonpower.com/" id="aspnetForm" enctype="multipart/form-data">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTgwMTc5MDcyOA9kFgJmD2QWAgIBD2QWAgICD2QWAgIBDxYCHgdlbmN0eXBlBRNtdWx0aXBhcnQvZm9ybS1kYXRhZGTUZfEEn2WVtQwKDIvKFOwmu7L0n7mH+y/9MVlUm55YqQ==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+              <input type="file" name="ctl00$imagemapper$imgInp" id="imgInp" class="fileUploader" /> </form>
+            <label for="imgInp" class="uploaderBTN">Browse</label>
+             <br />
+              <p>or drag an image into this area</p>
+            <br />
+            <br />
+            <br />
+            <span class="error-msg" style="display:none; color: red;">To continue, choose an image from your computer to upload.</span>
+          </div>
+          <div class="modal-pic">
+            <div class="trash"><i class="fa fa-trash"></i></div> <img id="imgToUpload" src="#" /> </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="clearfix"></div>
+        <div class="project-button btn-upload">Start Your Project <i class="fa fa-caret-right"></i>
+          </div>
+      </div>
+      <!-- end modal -->
+      <div id="upload-container">
+        <div class="upload-box-left">
+          <div class="upload-left-head">Upload My Own Photo</div>
+          <div class="upload-left-text">
+            <p>Choose an image from your computer to upload. Don't have an image available? Most smart devices capture images that meet our photo guidelines, so take a photo with your phone or tablet and save it to your computer, and upload from there!</p>
+            <br>
+            <p><i class="fa fa-check"></i>Resolution must be larger than 600 x 600</p>
+            <p><i class="fa fa-check"></i>File size must be smaller than 13MB</p>
+            <p><i class="fa fa-check"></i>Must be a JPG, PNG, BMP, or GIF</p>
+          </div>
+          <div class="upload-button-box ">
+            <div id="btnGetStarted" class="btn-upload">GET STARTED</div>
+          </div>
+        </div>
+        <div class="upload-box-right">
+          <div id="closemodal"><i class="fa fa-times"></i>CLOSE</div>
+          <div class="photo-good"> <img src="img/good.jpg" alt="Good Photo" />
+            <div class="photo-box-bar">GOOD PHOTO</div>
+          </div>
+          <div class="photo-good bad"> <img src="img/bad.jpg" alt="Bad Photo" />
+            <div class="photo-box-bar">BAD PHOTO</div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="photo-text">
+            <div class="star-text">
+              <p><i class="fa fa-star"></i>Use the good and bad photos above as a guideline for best results. Photos of your room should have a minimal amount of objects so you can easily draw over the surface you want in the room. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- IM End Start Modal -->
+    <!-- success -->
+    <div id="successOverlay">
+      <div id="successBox">
+        <h2>SUCCESS!</h2>
+        <p>Hover over a surface you defined to start designing.</p>
+        <div class="button">LET'S GET STARTED!</div>
+      </div>
+    </div>
+    <!-- end success -->
+    <!-- congrats -->
+    <div id="congratsOverlay">
+      <div id="congratsBox">
+        <h2>CONGRATULATIONS</h2>
+        <div class="btn-close">X</div>
+        <p> You have saved your room!<br /> <br /> Take the next step toward the renovation of your dreams by ordering free samples of your favorite Formica<span>&reg;</span>Brand products or finding out where to buy Formica<span>&reg;</span>Brand products.
+          </p>
+        <div class="btn btn-left">Order Samples&nbsp;&nbsp;<i class="fa fa-caret-right"></i></div>
+        <div class="btn btn-right">Where To Buy?&nbsp;&nbsp;<i class="fa fa-caret-right"></i></div>
+      </div>
+    </div>
+    <!-- end congrats -->
+    <!-- confirm change -->
+    <div id="confirmOverlay">
+      <div id="confirmBox">
+        <h2>WARNING</h2>
+        <div class="btn-close">X</div>
+        <p> Have you have saved your project?<br /> <br /> Any unsaved changes will be lost if you select a new room. </p>
+        <div class="btn btn-left">Return to Project&nbsp;&nbsp;<i class="fa fa-caret-right"></i></div>
+        <div class="btn btn-right">Continue&nbsp;&nbsp;<i class="fa fa-caret-right"></i></div>
+      </div>
+    </div>
+    <!-- end confirm change -->
+    <!-- // IM 3 UPLOAD OVERLAY -->
+  
+        <div id="my-projects" class="lightbox ghost-center"></div>
+      </section>
+      <!--vid overlay -->
+      <div id="vid-overlay"></div>
+      <!-- begin vid modal -->
+      <div class="vid-modal crop" style="display: none">
+        <div class="vid-modal-headline">Crop your Photo</div>
+        <div class="vid-modal-close"><i class="fa fa-close"></i></div>
+        <div class="vid-modal-box"></div>
+        <div class="vid-text">Adjust the size and location of your crop box</div>
+      </div>
+      <div class="vid-modal outline" style="display: none">
+        <div class="vid-modal-headline">Outline/Trace</div>
+        <div class="vid-modal-close"><i class="fa fa-close"></i></div>
+        <div class="vid-modal-box outline"></div>
+        <div class="vid-text"> Click point to point to create an outline of your surface. We recommend this tool for a more accurate tracing. </div>
+      </div>
+      <div class="vid-modal paint" style="display: none">
+        <div class="vid-modal-headline">Paint</div>
+        <div class="vid-modal-close"><i class="fa fa-close"></i></div>
+        <div class="vid-modal-box paint"></div>
+        <div class="vid-text">Hold and drag over your desired area to cover the surface.</div>
+      </div>
+      <div class="vid-modal wand" style="display: none">
+        <div class="vid-modal-headline">Fill/Magic Wand</div>
+        <div class="vid-modal-close"><i class="fa fa-close"></i></div>
+        <div class="vid-modal-box wand"></div>
+        <div class="vid-text">Click anywhere inside the surface you want the fill tool to trace and outline.</div>
+      </div>
+      <div class="vid-modal erase" style="display: none">
+        <div class="vid-modal-headline">Erase</div>
+        <div class="vid-modal-close"><i class="fa fa-close"></i></div>
+        <div class="vid-modal-box erase"></div>
+        <div class="vid-text">Hold and drag over the covered area to remove the parts you don't want covered.</div>
+      </div>
+      <div class="vid-modal perspective" style="display: none">
+        <div class="vid-modal-headline">Edit Your Perspective</div>
+        <div class="vid-modal-close"><i class="fa fa-close"></i></div>
+        <div class="vid-modal-box perspective"></div>
+        <div class="vid-text">Adjust how the product should lay on the surface. <br />Note: Each square within the grid should equate to approximately 1x1 square feet</div>
+      </div>
+      <!-- end vid modal -->
+      <!-- end vid overlay -->
+
+      <!-- estimate modal -->
+      <div id="estimate" class="lightbox ghost-center"></div>
+      <!-- // estimate modal -->
+
+      <script src="js/lib/jquery-3.1.1.js"></script>
+      <script src="js/lib/jquery-ui-1.12.1.js"></script>
+      <script src="js/lib/jquery-migrate-3.0.0.js"></script>
+      <script src="js/lib/lodash-4.17.2.js"></script>
+      <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>-->
+      <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>-->
+      <!--<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>-->
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.6/lodash.min.js"></script>-->
+      <script>
+        $('body').addClass('page-default');
+      </script>
+      <script>
+        (function(d) {
+          var config = {
+            kitId: 'wyz4vie', // GAF
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+      <script src="js/release7a4f?v=ouYgB0oILyXBI0mSYq3FdGNpxel6wUBVBlJ5dfUR9MU1"></script>
+
+        
+    <!-- IM 3 SCRIPTS -->
+    <script id="IM3Setup">
+      var isCanvasSupported = function() {
+        if (document.all && !window.atob) return false;
+        if (!window.XMLHttpRequest) return false;
+        var elem = document.createElement('canvas');
+        return !!(elem.getContext && elem.getContext('2d'));
+      };
+      var getData = function getData(img) {
+        var canvas = document.createElement('canvas');
+        var context = canvas.getContext('2d');
+        var imageObj = new Image();
+        context.drawImage(img, 0, 0);
+        canvas.toDataURL();
+      };
+
+      function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)', 'i').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+      }
+
+      function toggleDefaultLogin() {
+        CallLogin();
+        //if ($('#defaultLog').is(':visible')) {
+        //    closeDefaultLogin();
+        //}
+        //else {
+        //    openDefaultLogin();
+        //}
+      }
+
+      function openDefaultLogin() {
+        var action = '';
+        if ($(this).attr('id') == 'saveIcon') {
+          action = '?action=save&Specifier=' + Viz.baseSpecifier + '&sel=' + Viz.Sel.getAll() + '&SiteID=QualityEdge';
+        }
+        $('#projectDialog').dialog({
+          width: 'auto',
+          height: 'auto',
+          position: 'center',
+          modal: true,
+          open: function(event, ui) {
+            $('#projectDialog').load('/MyProjects/UserFolder.aspx' + action, function(response, status, xhr) {
+              if (status == 'error') {
+                var msg = 'Sorry but there was an error: ';
+                alert(msg + xhr.status + " " + xhr.statusText);
+              }
+            });
+          }
+        });
+        var log = $('#defaultLog');
+        log.show();
+      }
+      $(document).ready(function() {
+        $(document).mousedown(function(e) {
+          var $el = $(e.target);
+          if (!$el.is("li.zoom")) {
+            $('#visualizer').ChamViz({
+              action: 'unzoom'
+            });
+            $('li.zoom').html('<i class="fa fa-plus"></i>zoom');
+          }
+          if ($('#appliedProducts').is(":visible")) {
+            if (!$el.is('#appliedProducts') && !$el.parents().is('#appliedProducts')) {
+              $('#appliedProducts').slideUp();
+            }
+          }
+          if ($('.productModal:visible').length > 0) {
+            if (!$el.is('.productModal') && !$el.parents().is('.productModal') && !$el.is('.ctClose')) {
+              $('.productModal:visible').slideUp();
+              $('#topNavLeft ul li').removeClass("active");
+            }
+          }
+        });
+        //SetupMyProjects(SITEID);
+        //hide instrucntions to drop file for browsers that do not support it.
+        if (document.all && !window.atob) {
+          $('.upload-box p').hide();
+        }
+        //if (isCanvasSupported())
+        //else
+        $("#landRight").click(function() {
+          if (typeof $.cookie('UserID') == 'undefined') {
+            $(document.getElementById('MyProjects')).MyProjects({
+              action: 'open',
+              redirect: function() {
+                $("#uploadOverlay").show().css({
+                  "opacity": "0.6"
+                });
+                $('div.modal').fadeIn('slow');
+                $(this).MyProjects({
+                  action: 'close'
+                });
+              } /*'#'*/
+            });
+          } else {
+            $("#uploadOverlay").show().css({
+              "opacity": "0.6"
+            });
+            $('div.modal').fadeIn('slow');
+          }
+        });
+        $("div.modal-close").click(function() {
+          $("#uploadOverlay").fadeOut('slow').css({
+            "opacity": "0.6"
+          });
+          $("div.modal").fadeOut('slow');
+        });
+        $("div.btn-box").click(function() {
+          $('div.upload-box').fadeOut(100);
+          $('div.modal-pic').fadeIn(2);
+        });
+        $("body").on("dragover", function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          $(this).addClass('dragging');
+        });
+        $("body").on("dragleave", function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          $(this).removeClass('dragging');
+        });
+        $("#closemodal").click(function() {
+          $('#uploadOverlay, #upload-container').fadeOut('slow');
+        });
+        $("body").on("drop", '.upload-box', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (e.originalEvent.dataTransfer.files === void 0) return;
+          var file = e.originalEvent.dataTransfer.files[0],
+            reader = new FileReader();
+          reader.onload = function(event) {
+            window.IM3DropedFile = true;
+            $('#imgToUpload').attr('src', event.target.result);
+            $('.modal-pic').show();
+            $('.upload-box').hide();
+          };
+          reader.readAsDataURL(file);
+          return false;
+        });
+        $("div.modal-pic div.trash").click(function() {
+          document.getElementById('imgToUpload').src = '';
+          $('.upload-box').show();
+        });
+        $("#imgInp").change(function() {
+          if (this.files && this.files[0]) {
+            document.getElementById('imgToUpload').onload = function() {};
+            var reader = new FileReader();
+            reader.onload = function(e) {
+              window.IM3DropedFile = null;
+              $('#imgToUpload').attr('src', e.target.result);
+              $('.modal-pic').show();
+              $('.upload-box').hide();
+            }
+            reader.readAsDataURL(this.files[0]);
+            //$('#txtFileName').val(this.files[0].name);
+          } else {
+            //?IE9
+            $('.upload-box p').html('To continue click "Start Your Project" below!').show();
+            $('.upload-box input, .upload-box label').hide();
+            $('.upload-box').show();
+          }
+        });
+        $('div.modal .btn-upload').click(function () {
+          if ($('#imgToUpload').attr('src') === '') {
+            $('div.upload-box span').text('To continue, choose an image from your computer to upload.');
+            if ($('div.upload-box span').css('display') == 'none') $('div.upload-box span').show();
+            return;
+          }
+          var frm = document.createElement('form');
+          frm.style.display = 'none';
+          frm.enctype = "multipart/form-data";
+          var name = document.createElement('input');
+          name.name = 'projectname';
+          name.value = $('#name').val();
+          frm.appendChild(name);
+          if (window.IM3DropedFile == null || window.IM3DropedFile === void 0) {
+            var _input = document.getElementById('imgInp');
+            frm.appendChild(_input);
+          } else {
+            var input = document.createElement('textarea');
+            input.name = 'img';
+            input.maxLength = 175000000;
+            input.size = 175000000;
+            //input.max = 17500000;
+            input.value = $('#imgToUpload').get(0).src;
+            input.type = 'hidden';
+            frm.appendChild(input);
+          }
+          var baseSpec = 'GAF_USER_';
+          var input = document.createElement('textarea');
+          input.name = 'baseSpec';
+          input.value = baseSpec;
+          input.type = 'hidden';
+          frm.appendChild(input);
+          frm.method = 'POST';
+          frm.action = 'im.aspx';
+          document.getElementsByTagName('body')[0].appendChild(frm);
+          frm.submit();
+        });
+        var upload = getURLParameter('upload');
+        if (upload == '1') {
+          $('#rooms').hide();
+          if (typeof $.cookie('UserID') == 'undefined') {
+            window.setTimeout(function() {
+              $(document.getElementById('MyProjects')).MyProjects({
+                action: 'open',
+                redirect: function() {
+                  $("#uploadOverlay").show();
+                  $('#upload-container').fadeIn('slow');
+                  $(this).MyProjects({
+                    action: 'close'
+                  });
+                }
+              });
+            }, 1000);
+          } else {
+            $("#uploadOverlay").show();
+            $('#upload-container').show();
+          }
+        }
+        $('#btnGetStarted').off("click").on("click", function() {
+          $('#upload-container').fadeOut('slow');
+          $('div.modal').fadeIn('slow');
+        });
+      });
+    </script>
+    <!--//IM3 SCRIPTS-->
+  
+        <script src="../ca.chameleonpower.com/stats.js" type="text/javascript"></script>
+        <script>
+          window.ga = function() {
+            ga.q.push(arguments)
+          };
+          ga.q = [];
+          ga.l = +new Date;
+          ga('create', CHAM.GoogleAnalytics, 'auto');
+          ga('send', 'pageview')
+        </script>
+        <script src="../www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+
+    
+<!-- Mirrored from gafcontractor.chameleonpower.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Oct 2018 23:44:41 GMT -->
+</html>
